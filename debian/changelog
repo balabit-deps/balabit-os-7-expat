@@ -1,3 +1,13 @@
+expat (2.2.5-3ubuntu0.1) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: Denial of service
+    - debian/patches/CVE-2018-20843.patch: adds a break in
+      setElementTypePrefix avoiding consume a high amount of RAM
+      and CPU in expat/lib/xmlparser.c
+    - CVE-2018-20843
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Wed, 26 Jun 2019 12:14:29 -0300
+
 expat (2.2.5-3) unstable; urgency=medium
 
   * Don't install irrelevant README.md (closes: #884818).
