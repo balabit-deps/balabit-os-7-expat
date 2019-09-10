@@ -1,3 +1,12 @@
+expat (2.2.5-3ubuntu0.2) bionic-security; urgency=medium
+
+  * SECURITY UPDATE: heap-based buffer over-read
+    - debian/patches/CVE-2019-15903.patch: Deny internal
+      entities closing the doctype in expat/lib/xmlparse.c.
+    - CVE-2019-15903
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Tue, 10 Sep 2019 15:05:44 -0300
+
 expat (2.2.5-3ubuntu0.1) bionic-security; urgency=medium
 
   * SECURITY UPDATE: Denial of service
